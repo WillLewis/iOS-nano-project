@@ -1,3 +1,5 @@
+ACCESS: Add the Firebase API key to the Google plist in order to connect the app to its firebase server. You may also need to run a pod install. Please send any questions to willxemail@gmail.com.
+
 The application allows users to view items that are made available for any given day of the week. Users can do one of three things -- i) sign up as a user with an email and password; ii) view details about any item, including photos, a text description and detail piece parts of the item; and ii) sign up for notifications about that item. 
 
 The Firebase API is used to register users, store user authentication info and handle future authentication. 
@@ -8,4 +10,4 @@ When a user registers for notifications for an item, that item is added to fireb
 
 This is the alpha version of an app and there are several features being worked on that are not yet enabled.
 
-ACCESS: The app is currently private in github because it stores Firebase API key. In order to build the app, please send your github email to willxemail@gmail.com and I provide access to the project.   
+
