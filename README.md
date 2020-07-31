@@ -24,4 +24,5 @@ When a user registers for notifications for an item, that item is added to fireb
 **NOTICE**<br/>
 This is the alpha version of an app and there are several features being worked on that are not yet enabled.
 
-
+**DEMO**<br/>
+![Demo of app](REUP-App.gif)
