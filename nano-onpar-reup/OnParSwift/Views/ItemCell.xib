@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="gTV-IL-0wX" customClass="ItemCell" customModule="REUP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="360"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="360"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAs-Cv-cAv" customClass="ItemCardView" customModule="REUP" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="360"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rolex-daytona" translatesAutoresizingMaskIntoConstraints="NO" id="z4X-09-Oed" customClass="ItemCardImageView" customModule="REUP" customModuleProvider="target">
+                                <rect key="frame" x="142" y="78" width="116" height="204"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="l2m-W3-18j"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edj-s8-JTj" customClass="ItemCardButton" customModule="REUP" customModuleProvider="target">
+                                <rect key="frame" x="260" y="317" width="120" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" updatesFrequently="YES" allowsDirectInteraction="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Ssf-Kd-kPC"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                <state key="normal" image="NotifyMeButtonContents"/>
+                                <state key="selected" image="NotifyOnButtonContents"/>
+                                <connections>
+                                    <action selector="notifyMeButtonHandled:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cGO-eS-vwE"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RpH-Iz-pog">
+                                <rect key="frame" x="20" y="20" width="107.5" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAYTONA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMu-8c-Ozf" customClass="ItemCardName" customModule="REUP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="65.5" height="17"/>
+                                        <viewLayoutGuide key="safeArea" id="MsS-XN-tft"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="178274" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5W-yT-1wi" customClass="ItemCardModel" customModule="REUP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="47" height="17"/>
+                                        <viewLayoutGuide key="safeArea" id="GcF-QJ-CeO"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUN 15 @ 10 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkh-K8-78u" customClass="ItemCardAvailability" customModule="REUP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="107.5" height="17"/>
+                                        <viewLayoutGuide key="safeArea" id="q5v-Fg-Tjd"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="rjj-n4-y51"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="z4X-09-Oed" firstAttribute="centerX" secondItem="uAs-Cv-cAv" secondAttribute="centerX" id="8kI-2n-l6h"/>
+                            <constraint firstAttribute="height" constant="360" id="DiX-by-Hmr"/>
+                            <constraint firstItem="z4X-09-Oed" firstAttribute="centerY" secondItem="uAs-Cv-cAv" secondAttribute="centerY" id="N7C-Yt-HJP"/>
+                            <constraint firstAttribute="trailing" secondItem="Edj-s8-JTj" secondAttribute="trailing" constant="20" id="Qox-Hy-ML9"/>
+                            <constraint firstAttribute="bottom" secondItem="Edj-s8-JTj" secondAttribute="bottom" constant="15" id="TFX-aS-0oF"/>
+                            <constraint firstItem="z4X-09-Oed" firstAttribute="top" secondItem="uAs-Cv-cAv" secondAttribute="top" constant="78" id="UJy-Rn-FZX"/>
+                            <constraint firstItem="RpH-Iz-pog" firstAttribute="top" secondItem="uAs-Cv-cAv" secondAttribute="top" constant="20" id="uKW-n4-se1"/>
+                            <constraint firstItem="z4X-09-Oed" firstAttribute="leading" secondItem="RpH-Iz-pog" secondAttribute="trailing" constant="14.5" id="wxG-UK-GtX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uAs-Cv-cAv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HxH-RA-Ann"/>
+                <constraint firstItem="uAs-Cv-cAv" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Wxw-rL-hQp"/>
+                <constraint firstItem="uAs-Cv-cAv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mOX-w5-0vE"/>
+                <constraint firstItem="uAs-Cv-cAv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vei-xq-dwj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="187" height="134"/>
+            <connections>
+                <outlet property="itemImage" destination="z4X-09-Oed" id="Isz-0u-bVR"/>
+                <outlet property="itemInspectionDateTime" destination="Rkh-K8-78u" id="jlq-Q5-1bZ"/>
+                <outlet property="itemModel" destination="k5W-yT-1wi" id="Amp-QP-flr"/>
+                <outlet property="itemTitle" destination="uMu-8c-Ozf" id="50N-H2-HMa"/>
+                <outlet property="notifyMeButton" destination="Edj-s8-JTj" id="t1c-WY-e6I"/>
+            </connections>
+            <point key="canvasLocation" x="185.50724637681162" y="92.410714285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="NotifyMeButtonContents" width="78" height="16"/>
+        <image name="NotifyOnButtonContents" width="78" height="17"/>
+        <image name="rolex-daytona" width="129" height="229.5"/>
+    </resources>
+</document>

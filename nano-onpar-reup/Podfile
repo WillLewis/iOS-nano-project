@@ -1,0 +1,24 @@
+# OnPar
+# add pods for desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
+
+use_frameworks!
+platform :ios, '11.0'
+
+pod 'Firebase/Firestore'
+pod 'Firebase/Storage'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/RemoteConfig'
+pod 'FirebaseUI'
+pod 'Firebase/Auth'
+pod 'Firebase/Messaging'
+pod 'Firebase/Analytics'
+pod 'Firebase/DynamicLinks'
+pod 'Kingfisher', '~> 5.0'
+pod 'SDWebImage', '~>5.8.0'
+pod 'JGProgressHUD', '~>2.1'
+
+
+target 'OnParSwift' do
+end
